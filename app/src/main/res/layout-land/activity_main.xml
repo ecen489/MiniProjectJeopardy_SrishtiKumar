@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/myColor"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:id="@+id/frag_main1"
+        android:name="com.example.jeopardy1.ScoreboardFrag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_scoreboard" />
+
+    <fragment
+        android:id="@+id/frag_main2"
+        android:layout_gravity="center_horizontal"
+        android:name="com.example.jeopardy1.GridFrag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_grid" />
+
+</LinearLayout>
